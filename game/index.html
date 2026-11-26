@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valley Wing: Sky Courier</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0a1626; height: 100%; overflow: hidden; }
+  body { display: flex; align-items: center; justify-content: center; font-family: monospace, sans-serif; }
+  #wrap { position: relative; width: 1280px; max-width: 100vw; }
+  canvas { display: block; width: 100%; height: auto; background: #2f6fb4; }
+  #hint { position: absolute; left: 0; right: 0; bottom: -24px; color: #9fc6e8; font-size: 12px; text-align: center; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="hint">Valley Wing: arrows fly, W/S throttle, Space brake, G gear, F flaps, P pause, M sound, R restart. Plays offline.</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
